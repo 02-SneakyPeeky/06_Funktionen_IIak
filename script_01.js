@@ -5,10 +5,10 @@
 /*
 0. a+b | a-b | a*b | a/b  --> Ergebnis c 
 
-1. Dateneingabe + -überprüfung :
-2. Auswahl Rechenart : 
-3. Fkt. Grundrechenarten : 
-4. Ausgabe in Konsole : 
+1. Dateneingabe + -überprüfung : 
+2. Auswahl Rechenart :               check!
+3. Fkt. Grundrechenarten :           check!
+4. Ausgabe in Konsole :              check!
 */
 
 
@@ -18,17 +18,33 @@
 const ERROR_STR_DIV = "Division durch 0 nicht möglich!";
 const ERROR_STR_GEN = "Irgendetwas ging schief!"
 
+// wäre auch ,möglich aber unübersichtlich
+// output(calculator(parseFloat(prompt("zahl1"),prompt("zahl2"),prompt("operator")));
+
+function startApp() {
+	output(calculator(getNum1(),getNum2(),getOp()));
+	}
+
+function getNum1() {
+	return parseFloat(prompt("Zahl1"));
+}
+function getNum2() {
+	return parseFloat(prompt("Zahl2"));
+}
+function getOp() {
+	return prompt("Operator");
+}
 
 
 // module: calculator | tests:
 // agreement : "+","-","*",":","/"
-output(calculator(3,2,"+"));
-output(calculator(3,2,"-"));
-output(calculator(3,2,"*"));
-output(calculator(3,2,":"));
-output(calculator(3,2,"/"));
-output(calculator(3,0,"/"));
-output(calculator(3,2,"#?!"));
+// output(calculator(3,2,"+"));
+// output(calculator(3,2,"-"));
+// output(calculator(3,2,"*"));
+// output(calculator(3,2,":"));
+// output(calculator(3,2,"/"));
+// output(calculator(3,0,"/"));
+// output(calculator(3,2,"#?!"));
 
 function calculator(a,b,op) {
 	switch (op) {
