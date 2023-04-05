@@ -21,9 +21,10 @@ const ERROR_STR_GEN = "Irgendetwas ging schief!"
 // wäre auch ,möglich aber unübersichtlich
 // output(calculator(parseFloat(prompt("zahl1"),prompt("zahl2"),prompt("operator")));
 
+startApp();
 function startApp() {
 	output(calculator(getNum1(),getNum2(),getOp()));
-	}
+}
 
 function getNum1() {
 	return parseFloat(prompt("Zahl1"));
@@ -45,7 +46,6 @@ function getOp() {
 // output(calculator(3,2,"/"));
 // output(calculator(3,0,"/"));
 // output(calculator(3,2,"#?!"));
-
 function calculator(a,b,op) {
 	switch (op) {
 		case "+":
@@ -63,12 +63,12 @@ function calculator(a,b,op) {
 
 }
 
+
 // module: division a / b |  test:
 // output(divide(4,2));
 // output(divide(3,2));
 // output(divide(3,-2));
 // output(divide(3,0));
-
 function divide(a,b) {
 	
 	// if (b != 0) {            // Variante 1
@@ -88,7 +88,6 @@ function divide(a,b) {
 // output(multiply(3,2));
 // output(multiply(3,-2));
 // output(multiply(3,0));
-
 function multiply(a,b) {
 	return a * b
 }
@@ -97,7 +96,6 @@ function multiply(a,b) {
 // output(subtract(3,2));
 // output(subtract(3,-2));
 // output(subtract(3,0));
-
 function subtract(a,b) {
 	return a - b; 	
 }
