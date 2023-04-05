@@ -5,10 +5,10 @@
 /*
 0. a+b | a-b | a*b | a/b  --> Ergebnis c 
 
-1. Dateneingabe + -überprüfung : 
-2. Auswahl Rechenart :               check!
-3. Fkt. Grundrechenarten :           check!
-4. Ausgabe in Konsole :              check!
+1. Dateneingabe + -überprüfung : check! /
+2. Auswahl Rechenart :           check!
+3. Fkt. Grundrechenarten :       check!
+4. Ausgabe in Konsole :          check!
 */
 
 
@@ -25,7 +25,6 @@ startApp();
 function startApp() {
 	output(calculator(getNum1(),getNum2(),getOp()));
 }
-
 function getNum1() {
 	return parseFloat(prompt("Zahl1"));
 }
